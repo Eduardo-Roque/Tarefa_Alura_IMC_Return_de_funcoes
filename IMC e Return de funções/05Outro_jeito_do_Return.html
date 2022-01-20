@@ -1,0 +1,24 @@
+<meta charset="utf-8">
+<!--Abaixo Java Script-->
+<script>
+    //função de pular linhas
+    function pulalinha(){
+        document.write("<br>");
+    }
+    //função de troca o códido document.write pelo mostra e pular 1 linha.
+    function mostra(frase){
+        document.write(frase);
+        pulalinha();
+    }
+//...........................................................................//
+    //tarefa Abaixo//
+    function calculaIMC(altura, peso) {
+        return peso / (altura * altura);
+    }
+
+    var imcFlavio = calculaIMC(1.70, 70);
+    var imcAmigo = calculaIMC(1.72, 68);
+
+    mostra(imcFlavio);
+    mostra(imcAmigo);
+</script>
